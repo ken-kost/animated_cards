@@ -1,0 +1,32 @@
+/* Import scoped CSS rules for components */
+@import "./_components.css";
+
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* This file is for your main application CSS */
+
+:root {
+    --red-1: #fd1c00;
+    --red-2: #881a00;
+    --blue-1: #05a6ff;
+    --blue-2: #0257ff;
+    --green-1: #01fba2;
+    --green-2: #00974a;
+    --yellow-1: #ffffdb;
+    --yellow-2: #f2c667;
+    --orange-1: #ef9000;
+    --orange-2: #bb6802;
+}
+
+@property --gradient-angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+}
+
+@keyframes rotation {
+	0% { --gradient-angle: 0deg; }
+	100% { --gradient-angle: 360deg; }
+}
